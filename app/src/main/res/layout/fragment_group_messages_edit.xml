@@ -1,0 +1,65 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="cm.it.secret.gasmyr.toolkit.ui.group.event.GroupMessagesEditFragment">
+<LinearLayout
+    android:layout_width="368dp"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:background="@drawable/fonde"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="8dp">
+    <EditText
+        android:id="@+id/dialog_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="hello day essage"
+        android:layout_marginTop="15dp"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/dialog_night"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_height="wrap_content"
+        android:hint="hello night message"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginRight="2dp"
+            />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            />
+    </LinearLayout>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
